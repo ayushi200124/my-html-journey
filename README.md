@@ -21,6 +21,7 @@ We can run html codes from any given text editor. My personal favourite is VS Co
 - CSS stands for Cascading Style Sheets. It adds styling to the backbone and hence appealing the user experience. Example: Our body's appearance.
 - JS or JavaScript is the logic for the page layout. Makes the entire web-page functional and responsive. Example: Our body's brain.
 - `Alt+arrow key` can move line up and down. Also, create a special root file named *index.html*. We can access the boiler plate using `!+ emmet abbreviation`. 
+- `ctrl+/` to comment out lines. 
 <a name="ph1"></a>
 ## Phase 1
 ```
@@ -51,7 +52,7 @@ The Document Object Model is a programming API for HTML and XML documents. It de
 - Headings has 6 levels h1, h2, h3, h4, h5, h6 where h1 to h6 has decreasing size/importance. Helps a lot in SEO hence not use it to increase/decrease size or bold/italics it.
 - Some important tags:
     - `<p></p>` is paragraph tag which adds paragraphs. 
-    - `<a></a>` is anchor tag to add links. 
+    - `<a></a>` is anchor tag to add links. We can specify images in place of alternate texts so that when the user clicks the image it renders to the given link. `<a href="/about"> <img src="image.png" width="120"> </a>` 
     - `<img src    alt></img>` is the image tag to add image. 
     - `<b></b>`, `<i></i>`,`<u></u>`, bold, italic and underline tags respectively.  
     - `<br></br>` adds new line.  
@@ -59,6 +60,14 @@ The Document Object Model is a programming API for HTML and XML documents. It de
     - `<hr></hr>` is used for horizontal divider. 
     - `<sub></sub>`, `<sup></sup>`, are subscript and superscript tags respectively. 
     - `<pre></pre>` is a preserve option used to display texts as it is without ignoring the spaces and tabs. 
+    - `<div></div>` is division tag, type of container, which is also a block element(taking up most of the width)
+    - `<span></span>` is span tag which is a container and an inline element(takes up only the needed spaces/width)
+- **Block Elements**
+
+`<address><article><aside><blockquote><canvas><dd><div><dl><dt><fieldset><figcaption><figure><footer><form><h1>-<h6><header><hr><li><main><nav><noscript><ol><p><pre><section><table><tfoot><ul><video></video>`
+- **Inline Elements**
+
+`<a><abbr><acronym><b><bdo><big><br><button><cite><code><dfn><em><i><img><input><kbd><label><map><object><output><q><samp><script><select><small><span><strong><sub><sup><textarea><time><tt><var>`
 - Documents usually use Absolute and Relative links. The main difference between absolute and relative paths is that absolute URLs always include the domain name of the site with http://www. Relative links show the path to the file or refer to the file itself. A relative URL is useful within a site to transfer a user from point to point within the same domain.
 <a name="ph3"></a>
 ## Phase 3
@@ -66,12 +75,138 @@ The Document Object Model is a programming API for HTML and XML documents. It de
 - Creating a proper web-page layout, using correct tag in correct place, proper indexing is necessary for search engines and better user experience. We mainly use header, main and footer.
 - `<header></header>`
 - `<main></main>`
-    - `<section></section>`
+    - `<section></section>` 
     - `<article></article>`
     - `<aside></aside>`
 - `<footer></footer>`
 <a name="ph4"></a>
 ## Phase 4
+- **Lists:** We have html lists to organize our content in a structured manner. there are mainly two types of lists:
+
+**Unordered list**
+```
+       <ul type="circle">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+    </ul>
+```
+**Ordered list**
+```
+      <ol type="i">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+    </ol>
+```
+- **Forms:** We use forms to collect input from the user. `<form></form>`: There are different form elements for different kind of user input
+     - **input element:** Can be of text, checkbox, radio, button and submit type. We also have a 'file' type.
+     - **textarea element:** Defines a multi-line input, columns and row attributes can be used to size the textarea.
+     - **select element:** Defines a dropdown list.
+```
+<div>
+        <h1>Travel Form for our trip</h1>
+        <form action="form.php">
+          <input type="text" placeholder="Enter Your Name" /><br />
+          <label for="sectionida">
+            <input
+              type="radio"
+              value="Section a"
+              name="section"
+              id="sectionida"
+            />
+            Section A
+          </label>
+          <label for="sectionidb">
+            <input
+              type="radio"
+              value="Section b"
+              name="section"
+              id="sectionidb"
+            />
+            Section B
+          </label>
+          <label for="sectionidc">
+            <input
+              type="radio"
+              value="Section c"
+              name="section"
+              id="sectionidc"
+              class="red blue"
+            />
+            Section C </label
+          ><br />
+          <input type="checkbox" id="foodcanteen" class="red" name="canteen" />
+          <label for="foodcanteen">Want Food Canteen card</label><br />
+          <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
+          <textarea
+            name="explain"
+            id="explain"
+            cols="30"
+            rows="10"
+            placeholder="Explain why you want to join "
+          ></textarea>
+          <select name="car" id="car">
+            <option value="no-car">Select your car</option>
+            <option value="onmi">Omni</option>
+            <option value="omni2">Omni2</option>
+            <option value="dzire">Dzire</option>
+            <option value="i10">i10</option>
+            <option value="i20">i20</option>
+          </select>
+        </form>
+      </div>
+```
+- **Tables:** We use tables to display tabular data. 
+     - `<table>`        –  this tag is used to define Tables.
+     - `<tr>`           –  table row.
+     - `<td>`           –  table data cells.
+     - `<th>`           –  for table heading which is bold and center.
+     - `<thead></thead>`-  used to wrap table head.
+     - `<tbody></tbody>`-  used to wrap table body.
+     - colspan attribute-  wraps multiple columns.
+```
+<div>
+        <table>
+            <caption>Max Scores by different players in FauG</caption>
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <!-- <th>Player Name</th> -->
+                    <th colspan="3">Max Score</th>
+                    <!-- <th>Game</th> -->
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Sachin</td>
+                    <td>123</td>
+                    <td>FauG</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2</td>
+                    <td>Rahul</td>
+                    <td>123</td>
+                    <td>PubG</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+```
+![WhatsApp Image 2022-03-07 at 9 32 35 PM](https://user-images.githubusercontent.com/79920441/157071123-279bbeaa-d007-4d49-9079-2145a59ac75b.jpeg)
+- **Videos:** `<video></video>` tag is used to work with videos. We can use it's attributes to adjust width(height adjusts automatically if not specified) and also to auto-play and loop the video.
+```
+<div>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/9-GSIN8s5Eo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+</div>
+```
+- The codes after execution some what looks like this (it is just a sample output):
+![WhatsApp Image 2022-03-07 at 10 16 42 PM](https://user-images.githubusercontent.com/79920441/157079047-8c93b341-f129-4574-88d3-1be8ae587935.jpeg)
+- The directory structure of the folder should be like:
+<img alt="dir" src="https://user-images.githubusercontent.com/79920441/157043213-a6eead99-c373-4caa-9e6a-2174983c1abc.png" width="300" height="300" />
 <a name="ph5"></a>
 ## Phase 5
-![image](https://user-images.githubusercontent.com/79920441/157043213-a6eead99-c373-4caa-9e6a-2174983c1abc.png)
+
