@@ -1,5 +1,7 @@
 # How I learned html <img alt="GIF" src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Rocket.gif" width="40" height="40" />
+Here I will be documenting my entire day-1 journey of whatever I did to learn html. This is written by me purely for any future references and also to keep a track of important steps which might help me when I get stuck. This is not a tutorial from my end and I am open to any suggestions from my peers.
 
+Note: This writing might help you only if you are a complete beginner.
 1. [Pre-Requisite](#pre)
 2. [Phase 0](#ph0) 
 3. [Phase 1](#ph1) 
@@ -7,18 +9,69 @@
 5. [Phase 3](#ph3) 
 6. [Phase 4](#ph4)
 7. [Phase 5](#ph5)  
-
 <a name="pre"></a>
 ## Pre-Requisite
+![WhatsApp Image](https://user-images.githubusercontent.com/79920441/157030008-5439e94b-7451-4e8a-9840-150ca1b31b89.jpeg)
+
+We can run html codes from any given text editor. My personal favourite is VS Code. Also whatever we see on the internet today, uses html language to work and hence it is the basic requirement for any tech jobs.
 <a name="ph0"></a>
 ## Phase 0
+![WhatsAppimg](https://html-css-js.com/images/og.jpg)
+- HTML stand for Hypertext Markup Language. It is used to design the structure and layout of our website, also stands as the backbone of any given website. Example: Our body's skeleton.
+- CSS stands for Cascading Style Sheets. It adds styling to the backbone and hence appealing the user experience. Example: Our body's appearance.
+- JS or JavaScript is the logic for the page layout. Makes the entire web-page functional and responsive. Example: Our body's brain.
+- `Alt+arrow key` can move line up and down. Also, create a special root file named *index.html*. We can access the boiler plate using `!+ emmet abbreviation`. 
 <a name="ph1"></a>
 ## Phase 1
+```
+<!DOCTYPE html>                         <!--- Specifies that it is html5 type document --->
+<html lang="en">                        <!--- Root of an html page --->
+<head>                                  <!--- Contains meta-data --->
+    <meta charset="UTF-8">
+    <title>Document</title>             <!--- Title of the document --->
+</head>
+<body>                                  <!--- Main body rendered by the browser ---> 
+    <h1> This is a heading </h1>        <!--- The heading tag ---> 
+    <p> lorem300 </p>                   <!--- The paragraph tag, `Alt+Z` for word-wrap ---> 
+</body>                                 <!--- Closing the body tag ---> 
+</html>                                 <!--- End of file ---> 
+``` 
+- Tag is a container that has either contents or other tags in it. 
+- Elements are the ones which has contents, empty elements have neither content nor tags in them. `Element= opening tag+ content+ closing tag`.
+- Attributes are the properties of an element, example `<a href="https://wikipedia.com/"> WIKI </a>` has *a=anchor tag* and *href=attribute*. We can use single/double quotes.
+- html tag is the parent tag for head tag and body tag. Head tag and body tag are the child of html tag. head tag and body tag are siblings. 
+- We can use both .html and .htm extension. Inspect element or view page source can show you the template codes. 
+- Responsive website means it can fit to any kind of display size. 
+- html is not case sensitive. We use `<!---  ---> ` for comments. 
 <a name="ph2"></a>
 ## Phase 2
+**Document Object Model (DOM):**
+The Document Object Model is a programming API for HTML and XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated.
+![WhatsApp Img](https://miro.medium.com/max/1348/1*CcxghvAHaaaI-tOPkqP-og.png)
+- Headings has 6 levels h1, h2, h3, h4, h5, h6 where h1 to h6 has decreasing size/importance. Helps a lot in SEO hence not use it to increase/decrease size or bold/italics it.
+- Some important tags:
+    - `<p></p>` is paragraph tag which adds paragraphs. 
+    - `<a></a>` is anchor tag to add links. 
+    - `<img src    alt></img>` is the image tag to add image. 
+    - `<b></b>`, `<i></i>`,`<u></u>`, bold, italic and underline tags respectively.  
+    - `<br></br>` adds new line.  
+    - `<big></big>`, `<small></small>`, are the used to show big and small text respectively.
+    - `<hr></hr>` is used for horizontal divider. 
+    - `<sub></sub>`, `<sup></sup>`, are subscript and superscript tags respectively. 
+    - `<pre></pre>` is a preserve option used to display texts as it is without ignoring the spaces and tabs. 
+- Documents usually use Absolute and Relative links. The main difference between absolute and relative paths is that absolute URLs always include the domain name of the site with http://www. Relative links show the path to the file or refer to the file itself. A relative URL is useful within a site to transfer a user from point to point within the same domain.
 <a name="ph3"></a>
 ## Phase 3
+![Img](http://www.calcouk.com/images/typical_page_layout_simple.jpg)
+- Creating a proper web-page layout, using correct tag in correct place, proper indexing is necessary for search engines and better user experience. We mainly use header, main and footer.
+- `<header></header>`
+- `<main></main>`
+    - `<section></section>`
+    - `<article></article>`
+    - `<aside></aside>`
+- `<footer></footer>`
 <a name="ph4"></a>
 ## Phase 4
 <a name="ph5"></a>
 ## Phase 5
+![image](https://user-images.githubusercontent.com/79920441/157043213-a6eead99-c373-4caa-9e6a-2174983c1abc.png)
