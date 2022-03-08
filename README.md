@@ -209,4 +209,17 @@ The Document Object Model is a programming API for HTML and XML documents. It de
 <img alt="dir" src="https://user-images.githubusercontent.com/79920441/157043213-a6eead99-c373-4caa-9e6a-2174983c1abc.png" width="300" height="300" />
 <a name="ph5"></a>
 ## Phase 5
+Search Engine Optimization is also as important as the code itself. We will first focus only on html standpoint of SEO and not the keyword building and content optimizing aspect of SEO. There are mainly two types of SEO:
+- On page SEO- Done by html developers
+- Off page SEO
+Developers can implement SEO using the following techniques:
+- Set the title crisp, nice and to the point.
+- Set the meta-data description. `<meta name="description" content="........."></meta>`.
+- Set a nice URL slug.
+- Set the meta keywords tag.
+- Set the meta anchor tag `<meta name="author" content="Ayushi"></meta>`.
+- Set a favicon.
+- Compress images and other resources.
+- Remove unused html/css/js files and compress them.
+- Add alt texts to the embeded images/videos/other such contents.
 
