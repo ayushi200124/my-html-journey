@@ -8,7 +8,8 @@ Note: This writing might help you only if you are a complete beginner.
 4. [Phase 2](#ph2) 
 5. [Phase 3](#ph3) 
 6. [Phase 4](#ph4)
-7. [Phase 5](#ph5)  
+7. [Phase 5](#ph5)
+8. [Dumping into github](#github)  
 <a name="pre"></a>
 ## Pre-Requisite
 ![WhatsApp Image](https://user-images.githubusercontent.com/79920441/157030008-5439e94b-7451-4e8a-9840-150ca1b31b89.jpeg)
@@ -208,11 +209,25 @@ The Document Object Model is a programming API for HTML and XML documents. It de
 - The directory structure of the folder should be like:
 <img alt="dir" src="https://user-images.githubusercontent.com/79920441/157043213-a6eead99-c373-4caa-9e6a-2174983c1abc.png" width="300" height="300" />
 <a name="ph5"></a>
+
 ## Phase 5
+
 Search Engine Optimization is also as important as the code itself. We will first focus only on html standpoint of SEO and not the keyword building and content optimizing aspect of SEO. There are mainly two types of SEO:
 - On page SEO- Done by html developers
 - Off page SEO
+
 Developers can implement SEO using the following techniques:
+```
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seo is like this is a nice article on seo">
+    <meta name="keywords" content="seo, search, seo 2021">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>SEO in 2022: A beginners guide</title>
+</head>
+```
 - Set the title crisp, nice and to the point.
 - Set the meta-data description. `<meta name="description" content="........."></meta>`.
 - Set a nice URL slug.
@@ -223,3 +238,13 @@ Developers can implement SEO using the following techniques:
 - Remove unused html/css/js files and compress them.
 - Add alt texts to the embeded images/videos/other such contents.
 
+<a name="github"></a>
+## Dumping codes into github
+I always prefer to keep an online reference, maybe in form of a blog or in github. To continue doing the same with github we should have git in our local system and a github account. Follow the steps:
+- `git init` to initialize the working folder.
+- `git add` to add all the files into the staging area.
+- `git diff` to check the modified files.
+- `git commit -m "message...."` to commit the changes with appropriate messages.
+- Now we go and create a remote repository from our github account or github desktop version.
+- `git remote add <repository name> <repository url>` to add files in our remote repository.
+- `git push <repo name> master` to push all the codes into the remote repository.
