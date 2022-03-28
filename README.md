@@ -248,3 +248,7 @@ I always prefer to keep an online reference, maybe in form of a blog or in githu
 - Now we go and create a remote repository from our github account or github desktop version.
 - `git remote add <repository name> <repository url>` to add files in our remote repository.
 - `git push <repo name> master` to push all the codes into the remote repository.
+- `git remote add origin https://github.com/ayushi200124/praescriptio.git ----->
+git branch -M master ----->
+git push -u origin master` push existing repo
+
